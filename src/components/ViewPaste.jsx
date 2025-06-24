@@ -17,13 +17,21 @@ const ViewPaste = () => {
   return (
     <div className="w-full h-full py-10 max-w-[1200px] mx-auto px-5 lg:px-0">
       <div className="flex flex-col gap-y-5 items-start">
-        <input
+        {/* <input
           type="text"
           placeholder="Title"
           value={paste.title}
           disabled
           className="w-full text-black border border-input rounded-md p-2"
+        /> */}
+        <input
+          type="text"
+          placeholder="Title"
+          value={paste.title}
+          disabled
+          className="w-full border rounded-md p-2 text-black dark:text-white bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-700"
         />
+
         <div
           className={`w-full flex flex-col items-start relative rounded bg-opacity-10 border border-[rgba(128,121,121,0.3)] backdrop-blur-2xl`}
         >
