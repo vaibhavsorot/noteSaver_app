@@ -57,7 +57,7 @@ const ViewPaste = () => {
           </div>
 
           {/* TextArea */}
-          <textarea
+          {/* <textarea
             value={paste.content}
             disabled
             placeholder="Write Your Content Here...."
@@ -66,7 +66,18 @@ const ViewPaste = () => {
               caretColor: "#000",
             }}
             rows={20}
+          /> */}
+          <textarea
+            value={paste.content}
+            disabled
+            placeholder="Write Your Content Here...."
+            className="w-full p-3 bg-white dark:bg-[#1a1a1a] text-black dark:text-white border border-gray-300 dark:border-gray-700 rounded focus-visible:ring-0"
+            style={{
+              caretColor: "#000",
+            }}
+            rows={20}
           />
+
         </div>
       </div>
     </div>
